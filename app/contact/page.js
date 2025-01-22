@@ -136,10 +136,10 @@ export default function Footer() {
                   alt="Expertise Icon"
                   className="w-16 mb-4"
                 />
-                <h4 className="text-xl font-bold">Expertise</h4>
+                <h4 className="text-xl text-gray-600 font-bold">Expertise</h4>
                 <p className="text-gray-600">
-                  Years of experience in web development with a passion for
-                  crafting modern, responsive websites.
+                  Skilled in web development with a passion for building sleek,
+                  responsive, and modern websites.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
@@ -148,7 +148,9 @@ export default function Footer() {
                   alt="Support Icon"
                   className="w-16 mb-4"
                 />
-                <h4 className="text-xl font-bold">24/7 Support</h4>
+                <h4 className="text-xl text-gray-600  font-bold">
+                  24/7 Support
+                </h4>
                 <p className="text-gray-600">
                   Always here to assist you with your website and development
                   needs.
@@ -160,7 +162,7 @@ export default function Footer() {
                   alt="Innovation Icon"
                   className="w-16 mb-4"
                 />
-                <h4 className="text-xl font-bold">Innovation</h4>
+                <h4 className="text-xl text-gray-600  font-bold">Innovation</h4>
                 <p className="text-gray-600">
                   Leveraging cutting-edge technologies to bring your ideas to
                   life.

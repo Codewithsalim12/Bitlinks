@@ -1,11 +1,12 @@
 "use client";
 import { FaGithub, FaLinkedin, FaBlog, FaInstagram } from "react-icons/fa";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Toggle the menu visibility
   const toggleMenu = () => {
@@ -17,8 +18,23 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  // Add scroll listener to toggle navbar styling
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="h-16  bg-purple-700 flex justify-between items-center text-white px-5 sm:px-10 relative z-50">
+    <nav
+      className={`h-16 bg-purple-700 flex justify-between items-center text-white px-5 sm:px-10 relative z-50 ${
+        isScrolled ? "fixed top-0 left-0 w-full shadow-lg" : ""
+      }`}
+    >
       {/* Logo */}
       <div className="logo font-bold text-2xl">
         <Link href="/">
@@ -46,6 +62,15 @@ const Navbar = () => {
         } sm:translate-x-0`}
         style={{ zIndex: 40 }}
       >
+        {/* Add padding above the first link (only for small devices) */}
+        <style jsx>{`
+          @media (max-width: 640px) {
+            ul li:first-of-type {
+              margin-top: 1rem;
+            }
+          }
+        `}</style>
+
         {/* Close Icon */}
         {isMenuOpen && (
           <button

@@ -75,7 +75,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div className="flex flex-col items-center">
             <Image
-              src="/fast-img.png"
+              src="/Fast-img.png"
               alt="Fast service"
               width={80}
               height={80}
