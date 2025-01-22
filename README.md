@@ -20,6 +20,8 @@ Tech Stack
     Package Management: npm
     Hosting: Deployed on Vercel for fast and scalable deployment
 
+    DEMO: bitlinks-omega.vercel.app
+
 How It Works
 
     Enter a long URL in the input field.
