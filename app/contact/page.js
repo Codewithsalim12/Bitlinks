@@ -132,7 +132,7 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex flex-col items-center text-center">
                 <img
-                  src="/expertise.png"
+                  src="/Expertise.png"
                   alt="Expertise Icon"
                   className="w-16 mb-4"
                 />
