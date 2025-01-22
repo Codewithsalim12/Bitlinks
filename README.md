@@ -20,7 +20,7 @@ Tech Stack
     Package Management: npm
     Hosting: Deployed on Vercel for fast and scalable deployment
 
-    DEMO: (bitlinks-omega.vercel.app)
+    DEMO: https://bitlinks-omega.vercel.app/
 
 How It Works
 
@@ -33,9 +33,7 @@ Installation and Setup
 
 To run the project locally:
 
-    Clone the repository:
-
-git clone https://github.com/Codewithsalim12/Bitlinks.git
+    Clone the repository: git clone https://github.com/Codewithsalim12/Bitlinks.git
 
 Navigate to the project directory:
 
