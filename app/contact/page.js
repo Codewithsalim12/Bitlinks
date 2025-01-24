@@ -56,16 +56,16 @@ export default function Footer() {
                 href="mailto:saleemahmadmir18@gmail.com"
                 className="text-blue-700 hover:text-purple-300"
               >
-                💌Saleemahmadmir18@gmail.com
+                💌_Saleemahmadmir18@gmail.com
               </a>
             </p>
             <p className="text-lg mb-2">
-              <strong> 📌Location:</strong> Jammu and Kashmir, India
+              <strong> 📌_Location:</strong> Jammu and Kashmir, India
             </p>
             <p className="text-lg">
-              <strong> 📞Contact:</strong>{" "}
+              <strong> 📞_Contact:</strong>{" "}
               <a href="tel:+6006798656" className="hover:text-purple-300">
-                +6006798656
+                +91-6006798656
               </a>
             </p>
           </div>
