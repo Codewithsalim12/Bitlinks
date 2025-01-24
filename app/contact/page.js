@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -44,30 +45,48 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center gap-12">
         {/* Contact Section */}
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-16 px-6">
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-4xl font-bold mb-4">Let’s Connect</h2>
-            <p className="text-lg mb-4 text-gray-200">
+          <div className="md:w-1/2 text-center md:text-left p-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg">
+            <h2 className="text-4xl font-extrabold text-white mb-6 tracking-wide">
+              Let’s Connect
+            </h2>
+            <p className="text-lg mb-6 text-gray-200 leading-relaxed">
               I’d love to hear from you! Whether it’s a project inquiry or just
-              a friendly hello, drop me a message.
+              a friendly hello, feel free to drop me a message.
             </p>
-            <p className="text-lg mb-2">
-              <strong>Email:</strong>{" "}
+
+            <div className="mb-4 flex items-center text-lg text-gray-100">
+              <i className="fas fa-envelope mr-3 text-xl text-blue-200"></i>
+              <strong className="text-gray-300">Email:</strong>
               <a
                 href="mailto:saleemahmadmir18@gmail.com"
-                className="text-blue-700 hover:text-purple-300"
+                className="ml-2 text-blue-200 hover:text-purple-300 transition-colors font-medium relative group"
               >
-                💌_Saleemahmadmir18@gmail.com
+                Saleemahmadmir18@gmail.com
+                {/* Tooltip */}
+                <span className="absolute bottom-0 left-0 mb-8 ml-2 hidden group-hover:block text-sm text-white bg-gray-700 rounded-md px-2 py-1">
+                  Drop a message or mail for projects
+                </span>
               </a>
-            </p>
-            <p className="text-lg mb-2">
-              <strong> 📌_Location:</strong> Jammu and Kashmir, India
-            </p>
-            <p className="text-lg">
-              <strong> 📞_Contact:</strong>{" "}
-              <a href="tel:+6006798656" className="hover:text-purple-300">
+            </div>
+
+            <div className="mb-4 flex items-center text-lg text-gray-100">
+              <i className="fas fa-map-marker-alt mr-3 text-xl text-blue-200"></i>
+              <strong className="text-gray-300">Location:</strong>
+              <span className="ml-2 text-gray-300">
+                Jammu and Kashmir, India
+              </span>
+            </div>
+
+            <div className="flex items-center text-lg text-gray-100">
+              <i className="fas fa-phone-alt mr-3 text-xl text-blue-200"></i>
+              <strong className="text-gray-300">Contact:</strong>
+              <a
+                href="tel:+6006798656"
+                className="ml-2 text-blue-200 hover:text-purple-300 transition-colors font-medium"
+              >
                 +91-6006798656
               </a>
-            </p>
+            </div>
           </div>
 
           <div className="md:w-1/2">
